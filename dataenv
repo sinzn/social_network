@@ -1,0 +1,7 @@
+DB_HOST=db
+DB_USER=user
+DB_PASS=userpass
+DB_NAME=instashare
+REDIS_HOST=redis
+SESSION_SECRET=supersecret
+
