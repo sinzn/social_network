@@ -88,11 +88,10 @@ app.get("/", async (q, r) => {
 
   r.send(`<div align=center style=margin-top:30px>
     <h2>Welcome ${q.session.user.username}</h2>
-    <a href=/logout><button>Logout</button></a>
-    <h3>Create Post</h3>
+    <a href=/logout><button>Logout</button></a> <br><br>
     <form method=post action=/post enctype=multipart/form-data>
-      <textarea name=content rows=3 cols=40 placeholder="What's on your mind?" required></textarea><br><br>
-      <input type=file name=photo accept="image/*"><br><br>
+      <textarea name=content rows=1 cols=40 placeholder="What's on your mind?" required></textarea><br><br>
+      <input type=file name=photo accept="image/*">
       <input type=submit value="Post">
     </form>
     <h3>Feed</h3>
